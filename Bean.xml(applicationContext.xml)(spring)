@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="" class="" scope=""><!--id为所声明的变量名，class是类名，scope是使用范围-->
+        <property name="" value=""></property> <!--name是属性的名字，ref是引用的对象，value是为变量赋值-->
+    </bean>
+</beans>
