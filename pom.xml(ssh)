@@ -83,6 +83,12 @@
             <artifactId>hibernate-core</artifactId>
             <version>4.2.2.Final</version>
         </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-c3p0</artifactId>
+            <version>4.2.2.Final</version>
+        </dependency>
+
 
         <dependency>
             <groupId>javax.servlet</groupId>
