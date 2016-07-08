@@ -4,12 +4,17 @@
             "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
      <hibernate-mapping package="">
          <class name="" table="">
-             <id name=""> <!--主键-->
-                 <!--<generator class="native"/> <!--可选 生成策略 自增或自减-->-->
+             <id name="" type=""> <!--主键-->
+		<column name="" length=""></column>
+                 <!--<generator class="native"/> <!-可选 生成策略 自增或自减-->-->
              </id>
              
-             <property name="" column=""/>
-             <property name="" column=""/>
+             <property name="" type="">
+                <column name="" length=""></column>
+             </property>
+             <property name="">
+                <column name="" length=""></column>
+             </property>
           </class>
           
           <!--.....-->
