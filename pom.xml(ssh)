@@ -8,6 +8,17 @@
     <artifactId>SpringMvc</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+   <build>
+        <resources>
+              <resource>
+                  <directory></directory><!--将指定目录下的xml文件发布出去，在maven文件中/src/java中的文件默认是不会发布的-->
+                  <includes>
+                      <include>**/*.xml</include>
+                  </includes>
+              </resource>
+        </resources>
+    </build>
+
     <dependencies>
         <dependency><!--spring 4.2.6 -->
             <groupId>org.springframework</groupId>
