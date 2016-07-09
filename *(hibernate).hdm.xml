@@ -14,6 +14,9 @@
              </property>
              <property name="">
                 <column name="" length=""></column>
+ 		<!--<type name="">
+                    <param name=""></param>
+                </type>!--><!--可选-->
              </property>
           </class>
           
