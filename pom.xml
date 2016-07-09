@@ -7,6 +7,16 @@
     <groupId></groupId>
     <artifactId></artifactId>
     <version></version>
+    <build>
+        <resources>
+              <resource>
+                  <directory></directory><!--将指定目录下的xml文件发布出去，在maven文件中/src/java中的文件默认是不会发布的-->
+                  <includes>
+                      <include>**/*.xml</include>
+                  </includes>
+              </resource>
+        </resources>
+    </build>
 
     <dependencies>
         <dependency>
