@@ -10,7 +10,7 @@
     <build>
         <resources>
               <resource>
-                  <directory></directory><!--将指定目录下的xml文件发布出去，在maven文件中/src/java中的文件默认是不会发布的-->
+                  <directory></directory><!--将指定目录下的xml文件发布出去，在maven文件中/src/main/java中的文件默认是不会发布的-->
                   <includes>
                       <include>**/*.xml</include>
                   </includes>
