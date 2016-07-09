@@ -29,7 +29,28 @@
                         <prop key="hibernate.hbm2ddl.auto">update</prop>
                 </props>
         </property>
-
     </bean>
+
+   <!--事务处理,hibernate是基于事物处理的框架-->
+     <bean id="transactionManager"
+          class="org.springframework.orm.hibernate4.HibernateTransactionManager"
+          p:sessionFactory-ref="sessionFactory">
+    </bean>
+    <!--配置事物处理增强处理bean-->
+    <tx:advice id="txAdvice"
+               transaction-manager="transactionManager">
+        <tx:attributes>
+            <tx:method name="get" read-only="true"/>
+            <tx:method name="*" isolation="DEFAULT"
+                       propagation="REQUIRED" timeout="5"/>
+        </tx:attributes>
+    </tx:advice>
+    
+    <aop:config>
+        <aop:pointcut id="myPointcut" expression="bean(.....)"/><!--让bean方法织入事物逻辑控制增强,让该组件具有事物性，一般为service设置的bean-->
+        <aop:advisor advice-ref="txAdvice"
+       
+              pointcut-ref="myPointcut"/>
+    </aop:config>
 
 </beans>
