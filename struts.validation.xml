@@ -1,0 +1,22 @@
++<?xml version="1.0" encoding="UTF-8"?>
+ +
+ +<!DOCTYPE validators PUBLIC
+ +  "-//OpenSymphony Group//XWork Validator 1.0.2//EN"
+ +  "http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+ +
+ +    <validators>
+ +        <field name="">
+ +            <field-validation type="">
+ +                <param name=""></param><!--name="trim"表示该属性不能为null-->
+ +                <message></message>
+ +            </field-validation>
+ +            
+ +            <!--匹配正则表达式-->
+ +            <field-validation type="regex"><!--regex为正则表达式类型-->
+ +                <param name="regex"><!--所要匹配的正则表达式--></param>
+ +                <message></message>
+ +            </field-validation>
+ +        </field>
+ +        
+ +        <!--...-->
+ +    </validators>
